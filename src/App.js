@@ -1,14 +1,15 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 
-function App() {
+export default function App(prps) {
     return (
         <div className="App">
-            <Router>
-                <Header />
-            </Router>
+            <Header />
+            <Switch>
+                <Route exact path="/">
+                    <h1>Homepage</h1>
+                </Route>
+            </Switch>
         </div>
     );
 }
-
-export default App;
