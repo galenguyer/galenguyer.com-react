@@ -9,6 +9,9 @@ export default function App(prps) {
                 <Route exact path="/">
                     <h1>Homepage</h1>
                 </Route>
+                <Route>
+                    <h1>404 Not Found</h1>
+                </Route>
             </Switch>
         </div>
     );
