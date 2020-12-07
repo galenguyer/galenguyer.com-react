@@ -1,10 +1,12 @@
+import './Brand.scss';
+
 export default function Brand(props) {
     return (
-        <div className="brand">
-            <h1 class="name">
+        <div className="Brand">
+            <h1 class="Name">
                 <a href={window.location.pathname === "/" ? "" : "/"}>Galen Guyer</a>
             </h1>
-            <span className="description">Full-Stack Software Engineer</span>
+            <span className="Description">Full-Stack Software Engineer</span>
         </div>
     );
 }

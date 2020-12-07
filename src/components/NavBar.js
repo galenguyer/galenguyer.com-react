@@ -1,8 +1,12 @@
+import './NavBar.scss';
+
 export default function NavBar(props) {
     return (
-        <nav class="navbar">
+        <nav class="Navbar">
             <ul>
-                <li>Home</li>
+                <li>
+                    <a href="/">Home</a>
+                </li>
             </ul>
         </nav>
     );
