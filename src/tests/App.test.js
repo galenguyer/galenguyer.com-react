@@ -14,7 +14,7 @@ test("clicking Name in Brand sends you Home", () => {
     expect(screen.getByText(/404 Not Found/)).toBeInTheDocument();
 
     const leftClick = { button: 0 };
-    userEvent.click(screen.getByText(/Galen Guyer/i), leftClick);
+    userEvent.click(screen.getAllByText(/Galen Guyer/i)[0], leftClick);
 
     expect(screen.getByText(/Microsoft/i)).toBeInTheDocument();
 });
