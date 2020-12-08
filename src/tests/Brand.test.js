@@ -30,5 +30,5 @@ test("Name Links to Home", () => {
             <Brand />
         </MemoryRouter>
     );
-    expect(screen.queryByText(/Galen Guyer/i)).toHaveAttribute('href', '/');
+    expect(screen.queryByText(/Galen Guyer/i)).toHaveAttribute("href", "/");
 });

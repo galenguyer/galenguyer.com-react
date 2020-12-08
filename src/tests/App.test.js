@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import userEvent from '@testing-library/user-event'
+import userEvent from "@testing-library/user-event";
 import React from "react";
 import { MemoryRouter } from "react-router-dom";
 import "@testing-library/jest-dom/extend-expect";
@@ -16,5 +16,5 @@ test("clicking Name in Brand sends you Home", () => {
     const leftClick = { button: 0 };
     userEvent.click(screen.getByText(/Galen Guyer/i), leftClick);
 
-    expect(screen.getByText(/Homepage/i)).toBeInTheDocument()
+    expect(screen.getByText(/Microsoft/i)).toBeInTheDocument();
 });

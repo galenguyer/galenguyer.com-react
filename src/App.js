@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
+import Home from "./pages/Home";
 
 export default function App(prps) {
     return (
@@ -7,7 +8,7 @@ export default function App(prps) {
             <Header />
             <Switch>
                 <Route exact path="/">
-                    <h1>Homepage</h1>
+                    <Home />
                 </Route>
                 <Route>
                     <h1>404 Not Found</h1>
