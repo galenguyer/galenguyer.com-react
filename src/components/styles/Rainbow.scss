@@ -1,0 +1,12 @@
+#Rainbow {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 0px 1px;
+
+    .Color {
+        flex-grow: 1;
+        flex-shrink: 1;
+        height: 3px;
+    }
+}

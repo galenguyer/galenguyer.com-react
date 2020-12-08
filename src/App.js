@@ -1,6 +1,7 @@
 import { Switch, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Rainbow from "./components/Rainbow";
 import Home from "./pages/Home";
 
 export default function App(prps) {
@@ -16,6 +17,7 @@ export default function App(prps) {
                 </Route>
             </Switch>
             <Footer />
+            <Rainbow />
         </div>
     );
 }
