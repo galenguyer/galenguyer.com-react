@@ -3,8 +3,9 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Rainbow from "./components/Rainbow";
 import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
 
-export default function App(prps) {
+  export default function App(props) {
     return (
         <div className="App">
             <Header />
@@ -13,7 +14,7 @@ export default function App(prps) {
                     <Home />
                 </Route>
                 <Route>
-                    <h1>404 Not Found</h1>
+                    <NotFound />
                 </Route>
             </Switch>
             <Footer />
